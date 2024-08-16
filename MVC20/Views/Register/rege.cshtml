@@ -1,0 +1,48 @@
+﻿@model MVC20.Models.register
+@{
+    ViewBag.Title = "rege";
+}
+
+<h2>Insert</h2>
+@using(Html.BeginForm())
+ {
+         <table>
+               <tr>
+                        <td>@Html.LabelFor(e=>e.id)</td>
+                   <td>@Html.TextBoxFor(e=>e.id)</td>
+                   <td>@Html.ValidationMessageFor(e=>e.id)</td>
+               </tr>
+             <tr>
+                 <td>@Html.LabelFor(e=>e.uname)</td>
+                 <td>@Html.TextBoxFor(e=>e.uname)</td>
+                 <td>@Html.ValidationMessageFor(e=>e.uname)</td>
+             </tr>
+             <tr>
+                 <td>@Html.LabelFor(e=>e.pwd)</td>
+                 <td>@Html.TextBoxFor(e=>e.pwd)</td>
+                 <td>@Html.ValidationMessageFor(e=>e.pwd)</td>
+             </tr>
+             <tr>
+                 <td>@Html.LabelFor(e=>e.cpwd)</td>
+                 <td>@Html.TextBoxFor(e=>e.cpwd)</td>
+                 <td>@Html.ValidationMessageFor(e=>e.cpwd)</td>
+             </tr>
+             <tr>
+                 <td>@Html.LabelFor(e=>e.email)</td>
+                 <td>@Html.TextBoxFor(e=>e.email)</td>
+                 <td>@Html.ValidationMessageFor(e=>e.email)</td>
+             </tr>
+             <tr>
+                 <td>@Html.LabelFor(e=>e.phone)</td>
+                 <td>@Html.TextBoxFor(e=>e.phone)</td>
+                 <td>@Html.ValidationMessageFor(e=>e.phone)</td>
+             </tr>
+             <tr>
+                 <td>
+                     <input type="submit" value="save"/>
+                 </td>
+             </tr>
+         </table>
+
+ }
+
